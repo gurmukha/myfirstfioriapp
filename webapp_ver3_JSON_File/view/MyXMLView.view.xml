@@ -1,0 +1,27 @@
+<anubhav:View xmlns:anubhav="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form"
+			  xmlns="sap.m" controllerName="jerry.controller.MyXMLView">
+	<App>
+		<pages>
+			<Page id="myPage" title="My First Fiori app">
+				<content>
+					<f:SimpleForm editable="true">
+						<f:content>
+							<Label text="Emp Id"></Label>
+							<Input value="{/empStr/empId}"></Input>
+							<Label text="Name"></Label>
+							<Input value="{path : '/empStr/eName'}"></Input>
+							<Label text="Salary" ></Label>
+							<Input value="" id="idSal"/>
+							<Label text="Currency" ></Label>
+							<Input value="" id="idCurr"></Input>
+							<Label text="Smoker"></Label>
+							<CheckBox selected="{/empStr/smoker}"></CheckBox>
+							
+						</f:content>
+					</f:SimpleForm>
+					<Button id="idBtn" text="My Xml Button" press="wallah" />
+				</content>
+			</Page>		
+		</pages>
+	</App>
+</anubhav:View>

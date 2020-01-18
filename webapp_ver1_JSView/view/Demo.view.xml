@@ -1,0 +1,14 @@
+<mvc:View xmlns:core="sap.ui.core"
+	xmlns:t="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="jerry.controller.Demo">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<t:Table></t:Table>
+				    <Button text="Superman" width="100px" id="__button0" press="supermanCoda"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

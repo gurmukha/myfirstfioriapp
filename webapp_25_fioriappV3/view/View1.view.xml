@@ -1,0 +1,42 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ibm.fin.ar.controller.View1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="First View">
+		<headerContent>
+			<Button icon="sap-icon://cart-approval" press="onNext"></Button>
+		</headerContent>
+		<subHeader>
+			<Toolbar>
+				<SearchField liveChange="onSearch" search="onSearch"></SearchField>
+			</Toolbar>
+		</subHeader>
+		<content>
+			<!--<Button text="go tmyFruitsListo next" press="onNext"></Button>-->
+			<List items="{/fruits}" id="myList" selectionChange="onItemPress" mode="SingleSelectMaster" delete="onDelete">
+				<items>
+					<ObjectListItem 
+									title="{name}"
+									intro="{type}"
+									icon="{image}"
+									number="{price}"
+									numberUnit="{currency}">
+						<firstStatus>
+							<ObjectStatus text="{stockStatus}" 
+							state="{
+								path: 'stockStatus',
+								formatter:'.formatter.getState'
+							}"></ObjectStatus>
+						</firstStatus>
+					</ObjectListItem>
+				</items>
+			</List>
+			<!--<List id="myFruitList">
+				
+			</List>-->
+		</content>
+		<footer>
+			<Toolbar>
+				
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

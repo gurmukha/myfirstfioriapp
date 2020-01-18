@@ -1,0 +1,59 @@
+<anubhav:View xmlns:anubhav="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:t="sap.ui.table"
+	controllerName="jerry.controller.MyXMLView">
+	<App>
+		<pages>
+			<Page id="myPage" title="My First Fiori app">
+				<content>
+					<t:Table id="myTable" rows="{/empTab}" selectionMode="Single" visibleRowCount="5" rowSelectionChange="onRowSelect">
+						<t:columns>
+							<t:Column>
+								<!-- this label is the agg. of Column class which is part of sap.ui.table -->
+								<t:label>
+									<!-- this Label is a control from sap.m which is default -->
+									<Label text="Emp Id" textAlign="Center"/>
+								</t:label>
+								<t:template>
+									<Text text="{empId}"/>
+								</t:template>
+							</t:Column>
+							<t:Column>
+								<t:label>
+									<Label text="Emp Name" textAlign="Center" vAlign="Top"/>
+								</t:label>
+								<t:template>
+									<Input value="{eName}"/>
+								</t:template>
+							</t:Column>
+							<t:Column>
+								<t:label>
+									<Label text="Salary" textAlign="Center"/>
+								</t:label>
+								<t:template>
+									<Text text="{salary} {currency}"/>
+								</t:template>
+							</t:Column>
+						</t:columns>
+					</t:Table>
+					<f:SimpleForm editable="true" id="simplicityIsBestPolicy">
+						<f:content>
+							<Label text="Emp Id"/>
+							<Input value="{empId}" id="idField"/>
+							<Label text="Name"/>
+							<Input value="{path : 'eName'}"/>
+							<Label text="Salary"/>
+							<!--<Input value="{= ${/empStr/eName} === 'Anubhav' ? 900000 : 0}" id="idSal"/>-->
+							<Input value="{salary}" id="idSal"/>
+							<Label text="Currency"/>
+							<Input value="{currency}" id="idCurr"/>
+							<Label text="Smoker"/>
+							<CheckBox selected="{= ${/empStr/smoker} === 'true' ? true : false}"/>
+							<Button text="Flip Model" press="onFlip"/>
+						</f:content>
+					</f:SimpleForm>
+					<Button id="idBtn" text="My Xml Button" press="wallah"/>
+					<Button text="Magic" press="onMagic"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</anubhav:View>

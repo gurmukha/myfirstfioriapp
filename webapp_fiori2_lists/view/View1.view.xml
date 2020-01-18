@@ -1,0 +1,59 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ibm.fin.ar.controller.View1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="First View">
+		<headerContent>
+			<Button icon="sap-icon://cart-approval" press="onNext"></Button>
+		</headerContent>
+		<subHeader>
+			<Toolbar>
+				<SearchField search="onSearch"></SearchField>
+			</Toolbar>
+		</subHeader>
+		<content>
+			<!--<Button text="go to next" press="onNext"></Button>-->
+			<List>
+				<items>
+					<!--A display list item is used to create Display like item- simple display -->
+					<DisplayListItem label="Apple" value="An apple a day, keeps doctor away"></DisplayListItem>
+					<!-- used to display simple data top-bottom format with an icon -->
+					<StandardListItem title="Pineapple" description="Best for glowing skin" 
+									  icon="https://5.imimg.com/data5/AV/TV/GLADMIN-59147508/fresh-pineapple-250x250.jpg">
+					</StandardListItem>
+					<!-- used to create input items inside list which can receive input from user -->
+					<InputListItem>
+						<content>
+							<HBox>
+								<Label text="How many Mangos i send?"></Label>
+								<Input type="Number"></Input>
+							</HBox>
+						</content>
+					</InputListItem>
+					<!-- used to display a business object - number, number unit, title, intro, icon -->
+					<ObjectListItem title="Banana"
+									intro="Powerhouse of potasium"
+									icon="https://images-na.ssl-images-amazon.com/images/I/71gI-IUNUkL._SL1500_.jpg"
+									number="50"
+									numberUnit="a dozen">
+						<firstStatus>
+							<ObjectStatus text="Available" state="Success"></ObjectStatus>
+						</firstStatus>
+					</ObjectListItem>
+					<!-- If none of list item types serve the purpose, we can go for custom list item -->
+					<CustomListItem>
+						<content>
+							<Text text="Do you want Cash on delivery?"></Text>
+							<Switch></Switch>
+						</content>
+					</CustomListItem>
+					<!-- to show notification feeds like tweets, fb comments -->
+					<FeedListItem icon="https://thehill.com/sites/default/files/styles/thumb_small_article/public/narendramodi_donaldtrump.jpg?itok=vCLuMCHt"
+								  sender="Donald Trumph"
+								  info="Thomas Routers" timestamp="14th Aug 2019"
+								  text="My heartly greetings of independence day"></FeedListItem>
+					<!-- every item is a button -->
+					<ActionListItem text="Order Now"></ActionListItem>
+				</items>
+			</List>
+		</content>
+	</Page>
+</mvc:View>

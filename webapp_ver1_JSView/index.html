@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="this page is designed for html learning">
+      <meta name="keywords" content="sap ui5 training, sap fiori training, basic html">
+      <meta name="author" content="anubhav oberoy">
+	  <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			  data-sap-ui-libs="sap.m"
+			  data-sap-ui-theme="sap_bluecrystal"
+			  data-sap-ui-resourceroots='{
+				"jerry": "./"
+			  }'></script>
+	  <script>
+	  		var oView = new sap.ui.view("idSpiderman",{
+	  			viewName:"jerry.view.Main",
+	  			type:"JS"
+	  		});
+	  		oView.placeAt("content");
+	  </script>
+   </head>
+   <body class="sapUiBody">
+   		<div id="content"></div>
+   </body>
+</html>

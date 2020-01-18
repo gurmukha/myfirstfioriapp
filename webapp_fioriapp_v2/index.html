@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-resourceroots='{
+					"ibm.fin.ar" : "./"
+				}'
+				data-sap-ui-bindingSyntax="complex"
+				></script>
+		<script>
+			var oView = new sap.ui.view("idApp",{
+				viewName: "ibm.fin.ar.view.App",
+				type: "XML"
+			});
+			oView.placeAt("content");
+		</script>
+	</head>
+	<body class="sapUiBody">
+		<div id="content"></div>
+	</body>
+</html>

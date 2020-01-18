@@ -1,0 +1,28 @@
+{
+	"empStr": {
+		"empId": 100,
+		"eName": "Rohan",
+		"salary": 90000,
+		"currency": "INR",
+		"smoker":true
+	},
+	"empTab": [{
+			"empId": 201,
+			"eName": "Sakshi",
+			"salary": 25000,
+			"currency": "INR"
+		},
+		{
+			"empId": 202,
+			"eName": "Sonam",
+			"salary": 28000,
+			"currency": "USD"
+		},
+		{
+			"empId": 203,
+			"eName": "Vandita",
+			"salary": 30000,
+			"currency": "INR"
+		}
+	]
+}

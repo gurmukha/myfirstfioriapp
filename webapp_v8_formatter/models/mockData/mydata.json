@@ -1,0 +1,100 @@
+{
+	"empStr": {
+		"empId": 100,
+		"eName": "Rohan",
+		"salary": 90000,
+		"currency": "INR",
+		"smoker": true
+	},
+	"empTab": [{
+			"empId": 201,
+			"eName": "Sakshi",
+			"salary": 25000,
+			"currency": "INR",
+			"smoker": false,
+			"gender": "https://png.pngtree.com/svg/20170524/1246f50e9d.svg",
+			"mStat": "S",
+			"rating": 3
+		},
+		{
+			"empId": 202,
+			"eName": "Sonam",
+			"salary": 28000,
+			"currency": "USD",
+			"smoker": false,
+			"gender": "https://png.pngtree.com/svg/20170524/1246f50e9d.svg",
+			"mStat": "S",
+			"rating": 3
+		},
+		{
+			"empId": 203,
+			"eName": "Vandita",
+			"salary": 30000,
+			"currency": "INR",
+			"smoker": false,
+			"gender": "https://png.pngtree.com/svg/20170524/1246f50e9d.svg",
+			"mStat": "S",
+			"rating": 3
+		},
+		{
+			"empId": 204,
+			"eName": "John Snow",
+			"salary": 2800,
+			"currency": "USD",
+			"smoker": true,
+			"gender": "https://previews.123rf.com/images/gmast3r/gmast3r1411/gmast3r141100280/33645487-profile-icon-male-avatar-portrait-casual-person.jpg",
+			"mStat": "M",
+			"rating": 3
+		},
+		{
+			"empId": 205,
+			"eName": "Jeffery",
+			"salary": 7800,
+			"currency": "USD",
+			"smoker": true,
+			"gender": "https://previews.123rf.com/images/gmast3r/gmast3r1411/gmast3r141100280/33645487-profile-icon-male-avatar-portrait-casual-person.jpg",
+			"mStat": "S",
+			"rating": 2
+		},
+		{
+			"empId": 206,
+			"eName": "Ned Stark",
+			"salary": 15000,
+			"currency": "JPY",
+			"smoker": true,
+			"gender": "https://previews.123rf.com/images/gmast3r/gmast3r1411/gmast3r141100280/33645487-profile-icon-male-avatar-portrait-casual-person.jpg",
+			"mStat": "M",
+			"rating": 5
+		},
+		{
+			"empId": 207,
+			"eName": "Alia",
+			"salary": 85000,
+			"currency": "GBP",
+			"smoker": false,
+			"gender": "https://png.pngtree.com/svg/20170524/1246f50e9d.svg",
+			"mStat": "S",
+			"rating": 5
+		},
+		{
+			"empId": 208,
+			"eName": "Steve",
+			"salary": 8750,
+			"currency": "USD",
+			"smoker": true,
+			"gender": "https://previews.123rf.com/images/gmast3r/gmast3r1411/gmast3r141100280/33645487-profile-icon-male-avatar-portrait-casual-person.jpg",
+			"mStat": "M",
+			"rating": 3
+		},
+		{
+			"empId": 209,
+			"eName": "Titian",
+			"salary": 8700,
+			"currency": "CYN",
+			"smoker": false,
+			"gender": "https://previews.123rf.com/images/gmast3r/gmast3r1411/gmast3r141100280/33645487-profile-icon-male-avatar-portrait-casual-person.jpg",
+			"mStat": "S",
+			"rating": 2
+		}
+	]
+}
